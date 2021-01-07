@@ -1,0 +1,184 @@
+@font-face {
+	font-family: "waltograph42";
+	src: url('waltograph42.ttf');
+}
+
+body {
+	font-family: "waltograph42";
+	 font-size: 50px 
+}
+.absol {
+  position: relative;
+  margin-left: -365px;
+}
+
+.animations {
+  background-color: #EA5D5D;
+  overflow: hidden;
+  height: 300px;
+}
+
+.animationhello {
+  width: 100%;
+  animation: 10s linear infinite mickeymarche;
+  position: absolute;
+}
+
+.animationrun {
+  width: 100%;
+  left: 700%;
+  position: absolute;
+  animation: 10s linear infinite mickeyrun;
+}
+
+@keyframes mickeyrun {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-700%);
+  }
+}
+
+@keyframes mickeymarche {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(400%);
+  }
+}
+
+a {
+	color: #000000;
+	background-color: #ffffff;
+	transition: all 1s ease-out;
+}
+
+a:hover,
+a:focus {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+nav {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.menu {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 20px;
+}
+
+.brd {
+	border: 2px solid pink;
+	border-radius: 10px;
+}
+
+.titre_tableau {
+	background-color: blue;
+
+}
+
+#page {
+    background-image: url('image/fond_rose.jpg');
+
+}
+#cadre {
+    background-color: #000088 ;
+	margin-left: 16%;
+	margin-right: 16%;
+	 border-radius: 10px;
+}
+#fond_tbl{
+    background-color: #ffffff ;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.footer { 
+    background-color: white ;
+}
+
+/*easter egg*/
+
+
+.box{
+  position: absolute;
+  top: 260%;
+  left: 88%;
+  transform: translate(-50%, -100%);
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  color: white;
+  padding: 5px;
+}
+
+
+
+.box span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 52%;
+  
+}
+
+.box span:nth-child(1)
+{
+  transform:rotate(0deg);
+}
+
+.box span:nth-child(2)
+{
+  transform:rotate(90deg);
+}
+
+.box span:nth-child(3)
+{
+  transform:rotate(180deg);
+}
+
+.box span:nth-child(4)
+{
+  transform:rotate(270deg);
+}
+
+.box span:before
+{
+  content: '';
+  position: absolute;
+  width:100%;
+  height: 2px;
+  background: #50dfdb;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+  transform:scaleX(0);
+  transform-origin: left;
+  }
+  50%
+  {
+    transform:scaleX(1);
+  transform-origin: left;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+  transform-origin: right;
+    
+  }
+  
+  100%
+  {
+    transform:scaleX(0);
+  transform-origin: right;
+    
+  } 
